@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <EditText android:id="@+id/edit_message1"
+    android:orientation="horizontal">
+    <EditText android:id="@+id/secret_word"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/secret_word" />
+    <Button android:id="@+id/button_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/edit_message1" />
-    <EditText android:id="@id/edit_message2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_message2" />
-    <EditText android:id="@id/edit_message3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/something" />
+        android:text="@string/button_start"
+        android:onClick="startGame"/>
 </LinearLayout>

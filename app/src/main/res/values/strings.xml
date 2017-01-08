@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Hangman</string>
-    <string name="edit_message1">First message</string>
-    <string name="edit_message2">Second message</string>
-    <string name="something">Third message</string>
+    <string name="secret_word">Enter a word!</string>
+    <string name="button_start">Start Game</string>
 </resources>
