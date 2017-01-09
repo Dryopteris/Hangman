@@ -2,4 +2,6 @@
     <string name="app_name">Hangman</string>
     <string name="secret_word">Enter a word!</string>
     <string name="button_start">Start Game</string>
+    <string name="guess_hint">Guess a letter</string>
+    <string name="button_guess">Submit Guess</string>
 </resources>

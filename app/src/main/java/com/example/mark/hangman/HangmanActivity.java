@@ -4,9 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import static com.example.mark.hangman.R.id.guess_field_hangman;
 
 public class HangmanActivity extends AppCompatActivity {
 
@@ -21,18 +24,26 @@ public class HangmanActivity extends AppCompatActivity {
         char[] messageAsCharArray = messageUpperCase.toCharArray();
         int wordLength = messageAsCharArray.length;
         ArrayList solutionField = new ArrayList<String>(wordLength);
+        ArrayList answerField = new ArrayList<String>(wordLength);
         for (char letter:messageAsCharArray) {
             if (letter == ' ') {
-                solutionField.add(" / ");
+                solutionField.add("  ");
+                answerField.add("  ");
             } else {
                 solutionField.add("_");
+                answerField.add(letter);
             }
         }
         TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(solutionField.toString());
+        TextView answerView = new TextView(this);
+        answerView.setTextSize(40);
+        answerView.setText(answerField.toString());
 
-        ViewGroup layout = (ViewGroup) findViewById(R.id.solution_field_hangman);
-        layout.addView(textView);
+        ViewGroup solutionLayout = (ViewGroup) findViewById(R.id.solution_field_hangman);
+        solutionLayout.addView(textView);
+        solutionLayout.addView(answerView);
+
     }
 }
