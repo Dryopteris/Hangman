@@ -16,7 +16,8 @@
         <TextView android:id="@id/solution_field_hangman"
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:paddingBottom="180dp"/>
 
     </LinearLayout>
 
@@ -24,6 +25,7 @@
         android:id="@+id/guess_field_hangman"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="220dp"
         android:orientation="horizontal">
 
         <EditText

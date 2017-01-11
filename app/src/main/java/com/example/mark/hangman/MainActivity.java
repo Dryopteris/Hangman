@@ -16,12 +16,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startGame(View view) {
-        // Start the game!
         Intent intent = new Intent(this, HangmanActivity.class);
         EditText editText = (EditText) findViewById(R.id.secret_word);
         String secretWord = editText.getText().toString();
         intent.putExtra(HANGMAN_SECRET_MESSAGE, secretWord);
         startActivity(intent);
-
     }
 }
