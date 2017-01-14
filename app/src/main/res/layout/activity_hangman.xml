@@ -28,19 +28,39 @@
         android:paddingTop="220dp"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/guess"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="@string/guess_hint" />
 
         <Button
-            android:id="@+id/button_guess"
+            android:id="@+id/button_l"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="submitGuess"
-            android:text="@string/button_guess" />
+            android:width="10dp"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/button_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitGuess"
+            android:width="10dp"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/button_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitGuess"
+            android:width="10dp"
+            android:text="I" />
+
+        <Button
+            android:id="@+id/button_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitGuess"
+            android:width="10dp"
+            android:text="A" />
+
     </LinearLayout>
 
 </LinearLayout>
